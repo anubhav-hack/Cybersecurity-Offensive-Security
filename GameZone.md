@@ -53,3 +53,98 @@ Q4) When you've logged in, what page do you get redirected to?
 
 ## Task 4 - Using SQLMap 
 
+Q5) In the users table, what is the hashed password?
+
+![Initial Access](screenshot/78.png)
+
+![Initial Access](screenshot/79.png)
+
+![Initial Access](screenshot/80.png)
+
+![Initial Access](screenshot/81.png)
+
+**Ans:** ab5db915fc9cea6c78df88106c6500c57f2b52901ca6c0c6218f04122c3efd14
+
+Q6) What was the username associated with the hashed password?
+
+**Ans:** agent47
+
+Q7) What was the other table name?
+
+![Initial Access](screenshot/82.png)
+
+**Ans:** post
+
+## Task 4 - Cracking a password with JohnTheRipper 
+
+Q8) What is the de-hashed password?
+
+![Initial Access](screenshot/83.png)
+
+**Ans:** videogamer124
+
+Q9) Now you have a password and username. Try SSH'ing onto the machine.
+
+What is the user flag?
+
+![Initial Access](screenshot/84.png)
+
+![Initial Access](screenshot/85.png)
+
+**Ans** 649ac17b1480ac13ef1e4fa579dac95c
+
+## Task 5 - Exposing services with reverse SSH tunnels
+
+Q10) We will use a tool called ss to investigate sockets running on a host.
+
+If we run ss -tulpn it will tell us what socket connections are running
+
+Argument	Description
+-t	Display TCP sockets
+-u	Display UDP sockets
+-l	Displays only listening sockets
+-p	Shows the process using the socket
+-n	Doesn't resolve service names
+
+How many TCP sockets are running?
+
+![Initial Access](screenshot/86.png)
+
+**Ans:** 5
+
+Q11) What is the name of the exposed CMS?
+
+![Initial Access](screenshot/87.png)
+
+![Initial Access](screenshot/88.png)
+
+![Initial Access](screenshot/89.png)
+
+**Ans:** Webmin
+
+Q12) What is the CMS version?
+
+**Ans:** 1.580
+
+## Task 6 - Privilege Escalation with Metasploit 
+
+Q13) What is the root flag?
+
+![Initial Access](screenshot/90.png)
+
+![Initial Access](screenshot/91.png)
+
+![Initial Access](screenshot/92.png)
+
+![Initial Access](screenshot/93.png)
+
+![Initial Access](screenshot/94.png)
+
+![Initial Access](screenshot/95.png)
+
+**Ans:** a4b945830144bdd71908d12d902adeee
+
+![Initial Access](screenshot/96.png)
+
+
+
